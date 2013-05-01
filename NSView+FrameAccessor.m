@@ -8,7 +8,7 @@
 
 #import "FrameAccessor.h"
 
-@implementation View (FrameAccessor)
+@implementation NSView (FrameAccessor)
 
 - (CGPoint)origin {
     return self.frame.origin;

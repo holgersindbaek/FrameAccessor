@@ -6,15 +6,9 @@
 //  Copyright (c) 2012 CoreInvader. All rights reserved.
 //
 
-#if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
-    #import <UIKit/UIKit.h>
-    #define View UIView
-#else
-    #import <Foundation/Foundation.h>
-    #define View NSView
-#endif
+#import <Foundation/Foundation.h>
 
-@interface View (FrameAccessor)
+@interface NSView (FrameAccessor)
 
 - (CGPoint)origin;
 - (void)setOrigin:(CGPoint)newOrigin;
